@@ -4,6 +4,12 @@
         <button class="primary" type="button">Search</button>
     </form>
 </section>
+<!-- <section class="results">
+    <app-housing-location [casettaRicevuta]="casetta"></app-housing-location>
+</section> -->
 <section class="results">
-    <app-housing-location></app-housing-location>
+    <app-housing-location 
+    *ngFor="let casetta of casettaList"
+    [casettaRicevuta]="casetta">
+    </app-housing-location>
 </section>
