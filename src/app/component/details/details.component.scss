@@ -1,0 +1,70 @@
+article {
+    padding: 10px 30px 10px 30px;
+}
+.listing-photo {
+    height: 600px;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 30px;
+    float: right;
+  }
+  .listing-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .listing-location::before {
+    content: url('/assets/location-pin.svg') / '';
+  }
+  .listing-location {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24pt;
+    margin-bottom: 15px;
+  }
+  .listing-features > .section-heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(123, 164, 137);
+    font-size: 24pt;
+    margin-bottom: 15px;
+  }
+  .listing-features {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+  }
+  .listing-features li {
+    font-size: 14pt;
+  }
+  li {
+    list-style-type: none;
+  }
+  .listing-apply .section-heading {
+    font-size: 18pt;
+    margin-bottom: 15px;
+  }
+  label, input {
+    display: block;
+  }
+  label {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12pt;
+  }
+  input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 400px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid .3px;
+  }
+  @media (max-width: 1024px) {
+    .listing-photo {
+      width: 100%;
+      height: 400px;
+    }
+  }

@@ -7,7 +7,7 @@
     justify-content: space-around;
   }
   input[type="text"] {
-    border: solid 1px lightblue;
+    border: solid 1px rgb(173, 230, 184);
     padding: 10px;
     border-radius: 8px;
     margin-right: 4px;
@@ -15,10 +15,11 @@
     width: 30%;
   }
   button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 10px;
-    border: solid 1px darkgray;
-    background: lightblue;
-    color: rgb(70, 65, 65);
+    border: solid 1px;
+    background: rgb(123, 164, 137);
+    color: rgb(247, 247, 247);
     border-radius: 8px;
   }
   @media (min-width: 500px) and (max-width: 768px) {

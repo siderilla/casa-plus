@@ -3,4 +3,6 @@
         crossorigin />
     <h2 class="listing-heading">{{ casettaRicevuta.name }}</h2>
     <p class="listing-location">{{ casettaRicevuta.city }}, {{ casettaRicevuta.state }}</p>
+    <a [routerLink]="['/details', casettaRicevuta.id]">Learn More</a> 
+    <!-- in questo modo non c'è bisogno di una stringa con link href ma fa tutto angular -->
 </section>
