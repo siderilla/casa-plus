@@ -34,7 +34,11 @@ export class DetailsComponent {
 
   constructor() {
     const housingLocationId = Number(this.route.snapshot.params['id']);
-    this.casetta = this.casettaService.getHousingLocationById(housingLocationId)
+    this.casettaService.getHousingLocationById(housingLocationId).then(casettina => {
+      if (casettina) {
+        this.casetta = casettina;
+      }
+    })
   }
 
   submitApplication() {
